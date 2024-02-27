@@ -1,5 +1,5 @@
 # Will a customer subscribe to the "Term Deposit"?
-
+![SMOTE](images/money.jpg)
 ## Overview
 This Portuguese banking dataset has been retrieved from the UC Irvine machine learning repository. 
 https://archive.ics.uci.edu/dataset/222/bank+marketing
