@@ -128,44 +128,39 @@ I am following the CRISP-DM Framework for this analysis.
         -   Plot the confusion matrix on test data. visually analyze the model performance. 
 
 ### 5 - Evaluation
-    5.1 Overall performance
-        -   Model Performance
-        <p align="center">
-        <img src="images/WithoutSmoteResult.png">
-        </p>
-        -   Average ROC-AUC values 0.62
-        -   Accuracy acceptable at 89%
-        -   F1-score and Recall have poor  results ranging in 0.3
+![NO-SMOTE](images/WithoutSmoteResult.png)
 
-    5.2 Iterative Improvements
-        -   Based on the re-runs of the above changes to make
-            -   Tune hyperparameters of the model based on the previous runs and scores.
-            -   Acknowledge that the poor model performance is due to class imbalance, 
-                either use the resampling technique to balance out the classes and rerun the models
-                or use Better models that work great with imbalanced classes like Gradient Boost.
+	5.1 Overall performance
+	    -   Average ROC-AUC values 0.62
+	    -   Accuracy acceptable at 89%
+	    -   F1-score and Recall have poor  results ranging in 0.3
 
-    5.3 Overall performance with SMOTE resampling
-        -   Model Performance
-        <img src="images/WithSmoteResult.png">
-            <img src=“images/“crisp.png>
-        </p>
-        -   We can see the difference in model performance. ROC-AUC values rose from 0.62 to 0.92
-        -   Accuracy increased from 89% to 94%
-        -   F1-score dramatic increase from 0.3 to 0.9
-        -   Recall also increase from 0.28 to 0.9
+	5.2 Iterative Improvements
+	    -   Based on the re-runs of the above changes to make
+	        -   Tune hyperparameters of the model based on the previous runs and scores.
+	        -   Acknowledge that the poor model performance is due to class imbalance, 
+	            either use the resampling technique to balance out the classes and rerun the models
+	            or use Better models that work great with imbalanced classes like Gradient Boost.
+	     
+![SMOTE](images/WithSmoteResult.png)
 
-    5.4 Model Performance and Comparison
-    	-         <p align="center">
-        <img src="images/FinalResults.png">
-        </p>
-        -   Considering the F1-score and ROC-AUC, All 4 models performed well with very minor differences.
-        -   Logistic Regression outperformed SVM in F1-score, ROC-AUC as well as mean fit time.
-        -   SVM has the highest precision score and the worst fit time of 8 seconds
-        -   Decision Tree Classifier has a recall score and is lowest on all other params
-        -   K-Nearest Neighbors has the lowest fit time average scores ranging in 0.91
+	5.3 Overall performance with SMOTE resampling
+	    -   We can see the difference in model performance. ROC-AUC values rose from 0.62 to 0.92
+	    -   Accuracy increased from 89% to 94%
+	    -   F1-score dramatic increase from 0.3 to 0.9
+	    -   Recall also increase from 0.28 to 0.9
 
-    Based on the comparison metrics and the requirements, the User should choose Logistic regression or SVM for their classification. 
-    However, if the dataset is higher and not much computational power is available, then SVMs can lead to incorrect and incomplete results.
+	5.4 Model Performance and Comparison
+	    -   Considering the F1-score and ROC-AUC, All 4 models performed well with very minor differences.
+	    -   Logistic Regression outperformed SVM in F1-score, ROC-AUC as well as mean fit time.
+	    -   SVM has the highest precision score and the worst fit time of 8 seconds
+	    -   Decision Tree Classifier has a recall score and is lowest on all other params
+	    -   K-Nearest Neighbors has the lowest fit time average scores ranging from 0.91
+     
+![Final Perormance](images/FinalResults.png)
+
+	Based on the comparison metrics and the requirements, the User should choose Logistic regression or SVM for their classification. 
+	However, if the dataset is higher and not much computational power is available, then SVMs can lead to incorrect and incomplete results.
 
 ### 6 - Deployment
     6.1 Overview
@@ -175,7 +170,7 @@ I am following the CRISP-DM Framework for this analysis.
         further steps you can take to increase the success rate of customer acquisition and optimize the campaign to save on valuable resources and money.
 
     6.2 Strategies to implement
-        1.  Targeted Marketing Campaigns: Identify a demographic that is likely subscribe and tailor marketing strategies around to increase conversion rates.
+        1.  Targeted Marketing Campaigns: Identify a demographic that is likely to subscribe and tailor marketing strategies around to increase conversion rates.
         2.  Invest in further data accumulation: Understand that since the conversion rate is only 11%, further data accumulation is needed. Apart from the features
             that we currently have try to get customers' life events, risk appetite, and even their financial habits.
         3.  Customer Service: Build trust with customers by providing transparent information about the term deposit product, understanding their concerns,
