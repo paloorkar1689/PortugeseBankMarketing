@@ -131,7 +131,7 @@ I am following the CRISP-DM Framework for this analysis.
     5.1 Overall performance
         -   Model Performance
         <p align="center">
-        <img src=“images/“crisp.png>
+        <img src="images/WithoutSmoteResult.png">
         </p>
         -   Average ROC-AUC values 0.62
         -   Accuracy acceptable at 89%
@@ -146,7 +146,7 @@ I am following the CRISP-DM Framework for this analysis.
 
     5.3 Overall performance with SMOTE resampling
         -   Model Performance
-        <p align="center">
+        <img src="images/WithSmoteResult.png">
             <img src=“images/“crisp.png>
         </p>
         -   We can see the difference in model performance. ROC-AUC values rose from 0.62 to 0.92
@@ -154,7 +154,10 @@ I am following the CRISP-DM Framework for this analysis.
         -   F1-score dramatic increase from 0.3 to 0.9
         -   Recall also increase from 0.28 to 0.9
 
-    5.4 Model Performance and comparision
+    5.4 Model Performance and Comparison
+    	-         <p align="center">
+        <img src="images/FinalResults.png">
+        </p>
         -   Considering the F1-score and ROC-AUC, All 4 models performed well with very minor differences.
         -   Logistic Regression outperformed SVM in F1-score, ROC-AUC as well as mean fit time.
         -   SVM has the highest precision score and the worst fit time of 8 seconds
